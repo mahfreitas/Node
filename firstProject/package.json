@@ -1,0 +1,16 @@
+{
+  "name": "firstproject",
+  "version": "1.0.0",
+  "description": "testando conhecimento node",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon",
+    "dev": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mariane Freitas",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
