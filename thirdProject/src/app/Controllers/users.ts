@@ -26,14 +26,14 @@ router.get('/', (request, response) => {
         })
 })
 
-router.post('/users', (request, response) => {
+router.post('/', (request, response) => {
 
-    const postman: User{
-        nome:req.body.nome,
-        sobrenome: req.body.sobrenome
+    const postman: User = {
+        nome:request.body.nome,
+        sobrenome: request.body.sobrenome
     }
 
-    let query = `INSERT into users (nome,sobrenome) values(${postman.nome},${postman.sobrenome})`
+    let query = `INSERT into users (nome,sobrenome) values("${postman.nome}","${postman.sobrenome}")`
     Connect()
         .then(Connection => {
             Query(Connection, query)
