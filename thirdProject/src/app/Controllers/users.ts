@@ -13,7 +13,7 @@ router.get('/', (request, response) => {
         .then(
             Connection => {
                 Query(Connection, query)
-                    .then(results => { return response.status(201).json({ results }) })
+                    .then(results => { return response.status(200).json({ results }) })
                     .catch((error) => {
                         console.log(error.message)
                         return (response.status(500).json({ message: error.message, error }))

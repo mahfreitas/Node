@@ -1,4 +1,6 @@
-import { SetupApplication } from "./app"
+
+import { SetupApplication } from "./app";
+
 
 
 class ServerApplication{
@@ -13,6 +15,7 @@ class ServerApplication{
         application.init()
         // no start o servidor é associado a porta de escuta
         application.start()
+        
 
 
     }
