@@ -9,5 +9,15 @@ router.get('/',(request,response)=>{
     })
 })
 
+router.post('/',(request,response)=>{
+    const user = request.body
+    response.send(user)
+})
+
+router.put('/:nome',(request,response)=>{
+    const params = request.params
+    response.send(params)
+})
+
 export default router;
 
